@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARDA Samed Kütük - ADS 352</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            animation: slideUp 1.2s ease;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #2a5298;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+            transition: transform 0.3s;
+        }
+
+        .skills span:hover {
+            transform: scale(1.1);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #2a5298;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1e3c72;
+            transform: translateY(-2px);
+        }
+
+        .social a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #2a5298;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            color: #1e3c72;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        /* Animasyonlar */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ARDA Samed Kütük</h1>
+    <p>ADS 352 Dersi İçin Örnek Kişisel Web Sitesi</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>Hakkımda</h2>
+        <p>
+            Merhaba, ben ARDA Samed Kütük. Bu web sitesi, ADS 352 dersi kapsamında
+            örnek bir kişisel web sayfası oluşturma amacıyla hazırlanmıştır.
+        </p>
+        <p>
+            Bu proje ile HTML ve CSS kullanarak temel web tasarımı, sayfa düzeni
+            oluşturma ve kullanıcı dostu arayüz geliştirme konularında pratik yapılmıştır.
+        </p>
+    </section>
+
+    <section>
+        <h2>Proje Amacı</h2>
+        <p>
+            Bu sayfanın amacı; tek sayfa (single-page) web sitesi yapısını öğrenmek,
+            CSS'in HTML içine gömülü kullanımını görmek ve basit animasyonlar ile
+            sayfayı daha modern hale getirmektir.
+        </p>
+        <p>
+            Ayrıca responsive (mobil uyumlu) tasarım ve kullanıcı deneyimi konularına
+            giriş yapılmıştır.
+        </p>
+    </section>
+
+    <section>
+        <h2>Kullanılan Teknolojiler</h2>
+        <div class="skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Responsive Design</span>
+            <span>Animation</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>İletişim</h2>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 ARDA Samed Kütük | ADS 352 Projesi
+</footer>
+
+</body>
+</html>
